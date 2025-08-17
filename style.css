@@ -1,0 +1,291 @@
+/* starting variables for the site */
+:root {
+  --white: #f9faff;
+  --platinum: #e3e4e8;
+  --windsurfing: #32779b;
+  --marina: #5a91c7;
+  --gray: #9a9a9a;
+  --onyx: #3c3d44;
+  --charcoal: #343c47;
+  --corners: 24px 0;
+  --corners-sm: 10px 0;
+  --base-font-size: 1rem;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+body {
+  font-size: var(--base-font-size);
+  font-family: "Inter", sans-serif;
+  background-color: var(--platinum);
+  color: var(--onyx);
+}
+img {
+  max-width: 100%;
+  border-radius: var(--corners);
+}
+
+
+ul svg{
+    width: 36px;
+    height: 36px;
+}
+
+.icons{
+    list-style-type: none;
+
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    margin: 0;
+    padding: 0;
+}
+
+.main-article{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.main-article img {
+  object-fit: cover;
+  object-position: 50% 30%;
+  height: 175px;
+  width: 300px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+main{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project {
+    background-color: white;
+    padding: 3rem;
+    border-radius: var(--corners);
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.project img{
+  object-fit: cover;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.project ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.project img {
+  grid-row: 1/2;
+}
+
+footer{
+    text-align: center;
+}
+
+footer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 750px) {
+.main-article{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+    .footer-text .icons {
+        grid-column: 1 / 4;
+    }
+
+        .footer-text {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+@media (min-width: 850px) {
+main{
+    text-align: start;
+}
+
+.project {
+    grid-template-columns: 1fr 1fr;
+}
+
+.project ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: start;
+    gap: 1rem;
+}
+
+.project img {
+  grid-row: auto;
+}
+
+footer{
+    text-align: start;
+}
+
+.footer-text{
+    display: flex;
+    gap:6rem;
+}
+
+}
+
+/* 
+
+.icons{
+    list-style-type: none;
+    display:flex;
+    justify-content: center;
+    gap:10px;
+}
+
+ul svg{
+    height: 36px;
+    width:  36px;
+}
+
+.main-article{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.main-article img {
+  object-fit: cover;
+  object-position: 50% 30%;
+  height: 175px;
+  width: 300px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+main{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.projects{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 3rem;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: white;
+    padding: 3rem;
+    border-radius: var(--corners);
+    border: 1px solid rgb(205, 205, 205);
+}
+
+.project img {
+  grid-row: 1/2;
+}
+
+.project img{
+  object-fit: cover;
+  object-position: 50% 30%;
+  height: 175px;
+  width: 300px;
+  overflow: hidden;
+}
+
+footer{
+    text-align: center;
+}
+
+.footer-text ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+}
+
+.footer-text{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+}
+
+
+.h2-footer {
+  margin: 2rem 0;
+}
+
+
+@media (min-width: 750px) {
+    .main-article{
+    grid-template-columns: 1fr 1fr;
+    }
+    .footer-text {
+        grid-template-columns: repeat(3, 1fr);
+    }
+        .footer-text .icons {
+        grid-column: 1 / 4;
+    }
+    .icons{
+        justify-content: flex-start;
+    }
+    footer{
+    text-align: start;
+    }
+
+}
+    @media (min-width: 850px) {
+    .project {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+        .project img {
+        grid-row: auto;
+    }
+  main {
+    text-align: left;
+  }
+
+} */
+
+
+ /* projects */
+
+
+
+
+
